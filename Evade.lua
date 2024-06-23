@@ -30,7 +30,7 @@ do
     end
     function UpdateEspPlayer()
         for i,v in pairs(game:GetService("Players"):GetChildren()) do
-            pcall(function()
+            --pcall(function()
                 if not isnil(v.Character) then
                     if EspPlayer then
                         if not isnil(v.Character.Head) and not v.Character.Head:FindFirstChild("NameEsp") then
@@ -61,7 +61,7 @@ do
                         end
                     end
                 end   
-            end)
+            --end)
         end
     end
     
